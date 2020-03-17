@@ -14,3 +14,7 @@ function ww()
 end
 
 ww()
+
+local args=ngx.req.get_uri_args()
+local search = args.search
+ ngx.say(search)

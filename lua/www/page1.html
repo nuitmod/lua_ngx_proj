@@ -4,10 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="http://code.jquery.com/jquery-3.4.1.js"
+          integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+          crossorigin="anonymous"></script>
   <title>Document</title>
 </head>
 <body>
   <h5>page1 html lua file</h5>
   <a href="page2.html">go to page2</a>
+  <div class="">
+    <input type="button" value="click" onclick="fn_dat()">
+    <input id="i1" type="button" value="jq">
+    <p><div id="output"></div></p>
+  </div>
+  <script>
+function fn_dat(){
+    alert("u clicked button");
+  }
+$('#i1').on('click', function(){
+  $('#output').html("jq is on");
+})
+
+</script>
 </body>
 </html>
