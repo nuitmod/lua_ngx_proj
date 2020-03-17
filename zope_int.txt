@@ -1,0 +1,17 @@
+class IMod(zope.interface.Interface):
+     '''any type of walk'''
+     walk=zope.interface.Attribute('''walk attr''')
+     def move():
+         '''make a step'''
+
+
+
+
+class Mod():
+        zope.interface.implements(IMod)
+        def __init__(self): self.walk= 2 ; self.location= 2
+        def move(self): self.location= self.walk*5 ; print "Move"
+
+type()
+assert IMod.implementedBy(Mod)
+assert IMod.providedBy(Mod())

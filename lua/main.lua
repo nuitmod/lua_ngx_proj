@@ -1,0 +1,16 @@
+local ii="lua file content iiii 999"
+--local ind=require '/index.html'
+--local template = require "resty.template"
+--ngx.print(ii)
+--local dat=require("dat")
+--dat.a()
+
+ngx.say(ii)
+--print(ii)
+
+function ww()
+  local dat="<h5>fn dat fri</h5>"
+  ngx.say(dat)
+end
+
+ww()
